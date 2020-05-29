@@ -23,7 +23,7 @@ app.use(cookie());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use("/", (req,res,next)=>{
+app.use("/api", (req,res,next)=>{
     res.send("working");
 });
 app.use("/address", addressRouter);
