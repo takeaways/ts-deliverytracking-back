@@ -23,7 +23,9 @@ app.use(cookie());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-
+app.use("/", (res,req,next)=>{
+    res.send("working");
+})
 app.use("/address", addressRouter);
 
 
