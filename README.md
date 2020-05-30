@@ -1,58 +1,59 @@
-# portfolio
+# CRUD with React and NodeJs - Back
 
-# Bem (Block Element Modifier) - 컴포넌트 단위
+### 1)리액트를 이용한 CRUD를 구성해보기.
 
-- 어떻게 하면 CSS를 잘 작성할 것인가
-- BEM: http://getbem.com/introduction/
-- BEM 101 by CSS-Tricks: https://css-tricks.com/bem-101/
+- 사용 패키지
 
-- 10 Common Problems And How To Avoid Them:
+  - express
+  - sequelize
+  - react
+  - react-router-dom
+  - redux
+  - styled-components
+  - 기타
 
-  - https://www.smashingmagazine.com/2016/06/battling-bem-extended-edition-common-problems-and-how-to-avoid-them/
+- Front-End 환경 구성
+  - https://github.com/nomadGeonilJang/ts-deliverytracking-front
+  - react
+  - typescript
+  - styled-components
+  - webpack
+  - webstorm
+- Back-End 환경 구성
+  - https://github.com/nomadGeonilJang/ts-deliverytracking-back
+  - 단 ) 화면 구성에 필요한 API만을 간단하게 구현 사용했다.
+  - 테스트 코드와 Swagger API 문서 생략... 참고만
+    - https://mydoc.geoniljang.com/api/ ( git privacy : private )
+    - https://github.com/nomadGeonilJang/TDD-nodejs
+  - NodeJs
+  - Express
+  - Sequelize (Sqlite3)
+  - 현업에서는 챗봇 API, 에디터 환경에 몽고디비를 사용하고 있어 몽고디비를 고려 했다가 토이 프로젝트 진행을 위해서 택 sqlite
+- 호스팅 : 개인 토이 프로젝트 진행을 위한 도메인 사용.
+  - 결과물 확인을 위한 접속 정보 [ https://team.geoniljang.com/address ]
+  - 단 ) 토이 프로젝트 진행을위한 저렴한 서버를 임대해서 사용 성능적으로 느릴 수 있다...
+  - Light Sail (AWS)
+  - NginX
+  - Godaddy
+- 설치방법
+  ```bash
+  # npm install
+  # npm start or npm run build
+  ```
+ - 초기 데이터 추가 : Front 프로젝트 내부 addData 파일 실행
+   ```bash
+   # node addData
+   ```
 
-- block\_\_element--modifier
-- button--blue (자체로 컴포넌트)
+### 2) 소개
 
-# CSS
+- github : https://github.com/nomadGeonilJang
 
-### Box Model
+### 3) 아쉬운점
 
-- box-sizing : content-box
-- box-sizing : border-box : border 까지 포함하는 with content 가 줄어 든다.
+- 구조를 처음부터 잘 정리해서 시작했다면, css 스타일링을 조금 더 깔끔하게 할 수 있었을 것 같다.
+- 제플린 사용법이 조금 더 익숙했다면 좋았을 것 같다.
 
-### Position
+### 4) 느낀점
 
-- absolute : 원래있던 자리에서 빠져나온다.(부모중 static아닌 값 기준)
-- static : 기본 (top 영향 없음)
-- relative : 기존에 있던 자리에서 움직인다.
-- sticky : 부모 안 자리에 고정이 된다. ?
-- fixed : view port
-
-### Center Tric
-
-- block, margin : 0 auto; (수평)
-- text-align, line-height(부모 height)
-- transform: translate(50%, 50%);
-
-### background
-
-- background-image: url();
-- background-repeat: no-repeat;
-- background-position:center;
-- background-size: cover;
-- background: center/cover no-repeat url()
-
-### translform : 변화를 준다.
-
-- transform:
-  - translateX(100px)
-  - translate(100px -20px)
-  - scale(1.2)
-  - rotate(45deg)
-
-### transition : 변화의 과정
-
-- transition:
-  - transition-property: color
-  - transision-durationL 300mss
-  - transition: background-color 300me linear; (한 방에 쓰기)
+- 오랜만에 업무의 피로를 프로젝트로 풀었다. 개발은 역시 즐겁구나. 아직 성장할 수 있겠다. 다행이다.
