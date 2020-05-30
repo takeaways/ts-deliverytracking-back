@@ -38,7 +38,7 @@
 - 설치방법
   ```bash
   # npm install
-  # npm start or npm run build
+  # npm start
   ```
  - 초기 데이터 추가 : Front 프로젝트 내부 addData 파일 실행
    ```bash
