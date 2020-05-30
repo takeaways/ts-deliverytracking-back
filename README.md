@@ -40,10 +40,6 @@
   # npm install
   # npm start
   ```
- - 초기 데이터 추가 : Front 프로젝트 내부 addData 파일 실행
-   ```bash
-   # node addData
-   ```
 
 ### 2) 소개
 
